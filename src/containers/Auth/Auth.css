@@ -1,0 +1,21 @@
+.Auth {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+@media (min-width: 700px) {
+    .Auth {
+        width: 600px;
+    }
+}
