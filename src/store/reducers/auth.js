@@ -1,5 +1,5 @@
 import * as actionTypes from '../actions/actionTypes';
-import {updateObject} from "../utility";
+import {updateObject} from "../../shared/utility";
 
 const initialState = {
     token: null,
@@ -14,8 +14,6 @@ const authStart = (state, action) => {
 };
 
 const authSuccess = (state, action) => {
-    console.log(action.authData.localId);
-    console.log(action.authData.idToken);
     return updateObject(state, {
         error: null,
         loading: false,
